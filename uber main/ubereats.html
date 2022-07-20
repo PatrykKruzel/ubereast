@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="uber.css" type="text/css">
+
+<script type="text/javascript" src="ubereats.js"></script>
+</head>
+<body>
+    <div id="gora">
+        <div class="gorabox">
+        <div class="goraleft">
+<input type="image" src="menu.jpg" id="menubutton" onclick="showmenu()">
+<input type="image" src="ubereats.svg" id="home" onclick="refresh()">
+</div>
+<div id="divsearch1">
+    <img src="map.jpg" class="mapimg2"><input type="text" placeholder="Wpisz adres dostawy" id="inputsearch1" onclick="ciemnienie1()" ></div>
+<div class="guziki">
+<a href="https://auth.uber.com/v2/?breeze_local_zone=dca8&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fcampaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3D35a69816-095b-464b-9db3-4067bad5625b%26redirect%3D%252Fpl&state=1pzKuXKD4fAON2kpBLIPZqr6kWd0bAMf2f2XttM5Q_o%3D&x-uber-did=d005b184-acb0-464f-89e3-f8252a1d0803">
+    <div class="sbutton2"  id="signbutton"><div><img src="ludek.JPG"></div><div>Zaloguj się</div></div></a>
+<a href="https://auth.uber.com/v2/?breeze_local_zone=dca8&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fcampaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3D35a69816-095b-464b-9db3-4067bad5625b%26redirect%3D%252Fpl&state=YOxByivScDvjontyN0U4OoLto5Lh6F-mJazoKo6kHZo%3D&x-uber-did=d005b184-acb0-464f-89e3-f8252a1d0803">
+    <div class="supbutton2">Zarejestruj się</div></a>
+</div>
+</div>
+</div>
+    <div id="container">
+    <div id="m">
+        <div class="menupanel">
+            <div>
+                <a href="https://auth.uber.com/v2/?breeze_local_zone=dca8&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fcampaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3D35a69816-095b-464b-9db3-4067bad5625b%26redirect%3D%252Fpl&state=1pzKuXKD4fAON2kpBLIPZqr6kWd0bAMf2f2XttM5Q_o%3D&x-uber-did=d005b184-acb0-464f-89e3-f8252a1d0803">
+                    <div class="supbutton">Zarejestruj się</div></a><br>
+                <a href="https://auth.uber.com/v2/?breeze_local_zone=dca8&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fcampaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3D35a69816-095b-464b-9db3-4067bad5625b%26redirect%3D%252Fpl&state=YOxByivScDvjontyN0U4OoLto5Lh6F-mJazoKo6kHZo%3D&x-uber-did=d005b184-acb0-464f-89e3-f8252a1d0803">
+                    <div class="sbutton">Zaloguj się</div></a>
+        <ul class="ul1">
+    <li class="li1"><a href="https://www.uber.com/pl/pl/business/solutions/eats/overview/?_ga=2.18151737.1210792307.1657531258-923908260.1657531258">Utwórz konto firmowe</a></li>
+    <li class="li1"><a href="https://merchants.ubereats.com/pl/pl/s/signup/?_ga=2.213859348.1210792307.1657531258-923908260.1657531258">Dodaj swoją restaurancję</a></li>
+    <li class="li1"><a href="https://www.uber.com/pl/pl/deliver/?_ga=2.213859348.1210792307.1657531258-923908260.1657531258">Zarejestruj się, aby realizować dostawy</a></li>
+    </ul>
+    </div>
+    <div class="appdiv">
+        <div class="appdivgora">
+        <div class="divappimg">
+    <img src="ubereatsapp.jpg" id="appimg">
+</div>
+<div class="appopis">W aplikacji wybór jest jeszcze większy</div>
+</div>
+    <div id="applinks">
+    <a id="applink" href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">
+        <div >iPhone</div></a>
+    <a id="applink" href="https://play.google.com/store/apps/details?id=com.ubercab.eats">
+        <div>Android</div> </a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="zaslona" onclick="hidemenu()"></div>
+<div id="root">
+   
+
+<div class="zamawianie">
+<p id="textzamow"><b>Zamów jedzenie pod drzwi</b></p>
+<div class="list2">
+<div id="divsearch">
+<img src="map.jpg" class="mapimg"><input type="text" placeholder="Wpisz adres dostawy" id="inputsearch" onclick="ciemnienie()"></div>
+ <div><input type="button" id="search" value="Wyszukaj restauracje"></div>
+</div>
+<p id="textzamow2"><a href="www.ubereats.com/login"><u>Zaloguj się</u></a> aby korzytsać z ostatnich adresów</p> 
+</div>
+
+</div>
+
+<div id="root2">
+    <div class="przerwa"></div>
+    <div class="obrazki">
+        <a href="https://www.uber.com/pl/pl/business/solutions/eats/overview/?_ga=2.12972087.1210792307.1657531258-923908260.1657531258">
+            <div class="picbox"><img src="pic1.jpg" class="pic"> 
+            <p class="p1"><b>Zadbaj o posiłki dla pracowników</b></p><p class="p2"><u>Utwórz konto firmowe</u></p></div>
+        </a>
+            <a href="https://merchants.ubereats.com/pl/pl/s/signup/?_ga=2.38720931.1210792307.1657531258-923908260.1657531258">
+                <div class="picbox"><img src="pic2.jpg" class="pic"> 
+                <p class="p1"><b>Ty zapewnisz menu, a my dostawy</b></p><p class="p2"><u>Dodaj swoją restaurację</u></p></div>
+            </a>
+                <a href="https://www.uber.com/pl/pl/deliver/?_ga=2.251990025.1210792307.1657531258-923908260.1657531258">
+                    <div class="picbox"><img src="pic3.jpg" class="pic">
+                    <p class="p1"><b>Realizuj dostawy z Uber Eats</b></p><p class="p2"><u>Zarejestruj się, aby zrealizować dostawy</u></p></div>
+                </a>
+
+    </div>
+    <div class="przerwa"></div>
+<div class="listh2">
+<div> <h2>Miasta w pobliżu</h2></div> 
+<div><p><a href="https://www.ubereats.com/pl/location" id="showall"><u>Wyświetl wszystkie miasta (ponad 500)</u></a>  </div> 
+</div>
+
+<div class="mapadiv">
+<img src="mapa.jpg" id="mapa">
+</div>
+<div class="list">
+<div class="listmiasta">
+<div>
+<ul class="plist">
+<li><p ><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Białystok</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Bydgoszcz</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Częstochowa</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Gorzów Wielkopolski</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Kalisz</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/kielce-swietokrzyskie">Kielce</a></p></li>
+</ul>
+</div>
+<div>
+<ul class="plist">
+<li><p ><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Koszalin</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Kraków</a></p></li>
+<li><p a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Legnica</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Łódź</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Lublin</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/kielce-swietokrzyskie">Olsztyn</a></p></li>
+</ul>
+</div>
+<div>
+<ul class="plist">
+<li><p ><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Płock</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Poznań</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Radom</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Rzeszów</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Szczecin</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/kielce-swietokrzyskie">Toruń</a></p></li>
+</ul>
+</div>
+<div>
+<ul class="plist">
+<li><p ><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Trójmiasto</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Warszawa</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Włocławek</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Wrocław</a></p></li>
+<li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Zielona Góra</a></p></li>
+</ul>
+</div>
+</div>
+</div>    
+
+
+
+<div>
+<div ><h2>Kraje w których działa Uber Eats</h2></div>
+<div class="list">
+    <div class="listmiasta">
+<div>
+    <ul class="plist">
+    <li><p ><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Stany Zjednoczone</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Hiszpania</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Brazylia</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Meksyk</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Francja</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/kielce-swietokrzyskie">Japonia</a></p></li>
+</ul>
+</div>
+<div>
+    <ul class="plist">
+    <li><p ><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Kanada</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Australia</a></p></li>
+    <li><p><a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Polska</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Wielka Brytania</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Włochy</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/kielce-swietokrzyskie">Portugalia</a></p></li>
+</ul>
+</div>
+<div>
+    <ul class="plist">
+    <li><p ><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Szwajcaria</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Chile</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Nowa Zelandia</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Tajwan (Republika Chińska)</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Republika Południowej Afryki</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/kielce-swietokrzyskie">Belgia</a></p></li>
+</ul>
+</div>
+<div>
+    <ul class="plist">
+    <li><p><a href="https://www.ubereats.com/pl/city/bialystok-podlaskie">Ekwador</a></p></li>
+    <li><p><a href="https://www.ubereats.com/pl/city/bydgoszcz-kujawsko-pomorskie">Irlandia</a></p></li>
+    <li><p><a href="https://www.ubereats.com/pl/city/czestochowa-slaskie">Sri Lanka</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/gorz%C3%B3w-wielkopolski-lubuskie">Szwecja</a></p></li>
+    <li><p><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Gwatemala</a></p></li>
+    <li><p ><a href="https://www.ubereats.com/pl/city/kalisz-wielkopolskie">Kostaryka</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+    
+    <hr class="linia">
+    
+        <div></div>
+        <img src="ubereats.jpg" id="home2">
+        <div class="list2">
+      <div>
+        <ul class="plist">
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Pomoc</a></p></li>
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Dodaj nową restaurację</a></p></li>
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Zarejestruj się aby zrealizować nowe dostawy</a></p></li>
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Utwórz konto firmowe</a></p></li>
+            
+        </ul>
+      </div>
+    
+      <div>
+        <ul class="plist">
+            <li><p ><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Restauracje w pobliżu</a></p></li>
+            <li><p ><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Pokaż wszystkie miasta</a></p></li>
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Zobacz wszystkie kraje</a></p></li>
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Odbiór w pobliżu</a></p></li>
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Informacje o Uber Eats</a></p></li>
+            <li><p><a href="https://help.uber.com/ubereats/restaurants?_ga=2.46003236.1210792307.1657531258-923908260.1657531258" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)"><img src="jezyk.jpg" id="jezyk"> Polski</a></p></li>
+        </ul>
+        </div>
+      </div>
+   
+  
+      <div>
+      <input type="image" src="apple2.jpg"> <input type="image" src="gplay.jpg">
+    </div>
+    <div class="przerwa"></div>
+
+    <div class="listh2">
+        <div>
+        <input type="image" src="fb.jpg"> <input type="image" src="tw.jpg"> <input type="image" src="ig.jpg">
+    </div>
+    <div class="pbottom">  <a href="" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Działanie stron oraz aplikacji Uber i Uber Eats</a></div>
+    <div class="pbottom">   <a href="" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Polityka prywatności</a></div>
+    <div class="pbottom">  <a href="" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Warunki</a> </div>
+    <div class="pbottom"> <a href="" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Cennik</a>  </div>
+    <div class="pbottom">  <a href="" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Nie sprzedawaj moich danych (Kalifornia)</a></div>
+      </div>
+      
+      <div class="listdol">
+     
+        <div class="pbottom">Ta strona jest chroniona z użyciem kodu reCAPTCHA. Obowiązują dokumenty: <a href="" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Polityka prywatności</a> oraz <a href="" onmouseover="podkresl(this)" onmouseout="niepodkresl(this)">Warunki korzystania z usługi</a> firmy Google.</div>
+        <div class="pbottom"> © 2022 Uber Technologies Inc.</div>
+    
+</div>
+<div class="przerwa"></div>
+
+</div>
+</body>
+</html>
