@@ -4,12 +4,14 @@ function showmenu(){
    document.getElementById("m").style.visibility= "visible";
    document.getElementById("zaslona").style.visibility= "visible";
    document.getElementById("zaslona").style.opacity= "0.5";
+   document.getElementById("container").style.overflow = "hidden";
 }
 function hidemenu(){
     document.getElementById("m").style.width = "0%";
     document.getElementById("m").style.visibility= "hidden";
     document.getElementById("zaslona").style.visibility= "hidden";
     document.getElementById("root").style.opacity= "1";
+    document.getElementById("container").style.overflow = "visible";
 }
 
 function refresh(){
