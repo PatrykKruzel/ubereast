@@ -118,6 +118,9 @@ a {
     top: 10%;
     width: 11%;
     height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #inputsearch {
@@ -208,7 +211,7 @@ a {
     padding: 12px 16px;
     color: white;
     background-color: black;
-    border-radius: 4%;
+    border-radius: 8px;
 }
 
 .sbutton {
@@ -357,7 +360,7 @@ top: 40%;
 }
 
 
-#textzamow {
+.textzamow {
     width: 75%;
     font-weight: 70%;
     margin-bottom: 45px;
@@ -447,7 +450,7 @@ a {
 }
 
 .obrazki {
-    
+    position: relative;
     height: 50%;
     width: 100%;
     display: flex;
@@ -456,7 +459,6 @@ a {
 
 }
 .picbox{
-    
     height: 100%;
      width: 95%;
      display: flex;
@@ -477,6 +479,7 @@ li {
 
     .listh2 {
         padding: 5px;
+        position: relative;
         display: flex;
         justify-content: space-between;
         word-wrap: break-word;
@@ -484,8 +487,14 @@ li {
     }
 
  
-.list {
-    
+.listgora {
+    position: relative;
+    width: 80%;
+    height: 40%;
+}
+
+.listsrodek {
+    position: relative;
     width: 80%;
     height: 40%;
 }
@@ -523,7 +532,11 @@ li {
     flex-direction: row;
     justify-content: end;
 }
-
+.listzamawianie{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
 
 
 .mapadiv {
@@ -561,8 +574,193 @@ li {
     height: 5%;
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .menupanel {
+        background-color: yellow;
+        width: 100%;
+        padding: 15%;
+    }
+
+    #gora {
+        height: 9%;
+        bottom: 91%;
+    }
+
+    .gorabox{
+        background-color: teal;
+        height: 60%;
+        top:30%;
+        width: 90%;
+        left: 3%;
+    }
+
+    .goraleft {
+        background-color: tomato;
+        height: 100%;
+        width: 50%;
+        top: 10%;
+
+    }
+
+    #menubutton {
+        width: 50%;
+        height: 50%;
+        top: 0%;
+    }
+
+    #home{
+        top: 50%;
+        height: 50%;
+        width: 90%;
+    }
+
+    .guziki {
+background-color: sienna;
+width: 50%;
+left: 55%;
+height: 80%;
+top: 0%;
+
+    }
+.sbutton2 {
+    width: 110%;
+    height: 100%;
+    padding: 40%;
+}
+
+.singuptext{
+    visibility: hidden ;
+}
+.supbutton2 {
+    width: 120%;
+    height: 100%;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 15%;
+    position: relative;
+   right: 20%;
+}
+.signupimg{
+    position: relative;
+   
+}
+.zamawianie{
+    background-color: aqua;
+    width: 90%;
+    height: 40%;
+    position: relative;
+    left: 5%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.textzamow {
+    position: relative;
+    width: 100%;
+    font-size: 90px;
+    line-height: 120%;
+    margin-bottom: 0%;
+   
+}
+
+.listzamawianie {
+    position: relative;
+    background-color: sienna;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#divsearch {
+    position: relative;
+   margin-bottom: 2%;
+    width: 100%;
+    height: 50%;
+    top: 0%;
+}
+.mapimg {
+height: 50%;
+width: 10%;
+top:25%;
+right: 0%;
+}
+
+#inputsearch {
+    width: 100%;
+    font-size: 40px;
+}
+#searchbutton {
+    background-color: red;
+    width: 100%;
+    height: 30%;
+}
+#search {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+
+}
+.divtext2 {
+    background-color:olive ;
+    width: 90%;
+    height: 10%;
+    font-size: 40px;
+    
+}
+
+.obrazki {
+    flex-direction: column;
+    height: 90%;
+    position: relative;
+}
+
+.picbox{
+    position: relative;
+height: 100%;
+width: 100%;
+}
+.piclink{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    }
+    .p1 {
+        font-size: 50px;
+    }
+
+    .p2 {
+        font-size: 40px;
+    }
+    .przerwa2{
+        top: 10%;
+        position: relative;
+    }
+
+.listh2 {
+    top: 10%;
+}
+
+.mapadiv{
+    top:15%;
+    height:10%;
+}
+.listgora{
+    top: 20%;
+    background-color: steelblue;
+    
+}
+.list{
+    background-color: seagreen;
+    top: 30%;
+}
+
+.listmiasta {
+top:50%;
+font-size: 40px;
+}
+}
 
 
-@media only screena and (max-width:412px) {
-        
-} 

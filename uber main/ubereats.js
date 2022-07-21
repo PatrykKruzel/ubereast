@@ -1,10 +1,19 @@
 function showmenu(){
-    document.getElementById("m").style.width = "14%";
-    document.getElementById("m").style.height = "100%";
-   document.getElementById("m").style.visibility= "visible";
+  if(window.innerWidth<1000) {
+    document.getElementById("m").style.width = "75%";
+    document.getElementById("m").style.visibility= "visible";
    document.getElementById("zaslona").style.visibility= "visible";
    document.getElementById("zaslona").style.opacity= "0.5";
    document.getElementById("container").style.overflow = "hidden";
+   }
+
+   else {
+    document.getElementById("m").style.width = "14%";
+    document.getElementById("m").style.visibility= "visible";
+   document.getElementById("zaslona").style.visibility= "visible";
+   document.getElementById("zaslona").style.opacity= "0.5";
+   document.getElementById("container").style.overflow = "hidden"
+   }
 }
 function hidemenu(){
     document.getElementById("m").style.width = "0%";
