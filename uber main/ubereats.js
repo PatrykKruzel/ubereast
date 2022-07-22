@@ -1,10 +1,11 @@
 function showmenu(){
-  if(window.innerWidth<1000) {
-    document.getElementById("m").style.width = "75%";
+  if(window.innerWidth<1500) {
+    document.getElementById("m").style.width = "70%";
     document.getElementById("m").style.visibility= "visible";
    document.getElementById("zaslona").style.visibility= "visible";
    document.getElementById("zaslona").style.opacity= "0.5";
    document.getElementById("container").style.overflow = "hidden";
+   document.getElementById("applink1").innerHTML = "Pobierz aplikację";
    }
 
    else {
