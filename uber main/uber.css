@@ -36,6 +36,7 @@ justify-content: flex-start;
 
 #m {
     z-index: 4;
+    opacity: 0;
     background-color: white;
     height: 100%;
     width: 0%;
@@ -43,7 +44,7 @@ justify-content: flex-start;
     left: 0%;
     top: 0%;
     display: flex;
-   transition: 0.5s;
+   transition: 0.4s;
     padding: 3%;
     
    box-shadow:0px 0px 5px;
@@ -55,21 +56,27 @@ justify-content: flex-start;
 }
 
 .menupanel {
+    
     position: absolute;
+    height: 85%;
+    width: 80%;
+    right: 10%;
+    top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: UberMoveText, sans-serif;
     
-    height: 80%;
+    
     
 }
 
 
 
 #menubutton {
-    height: 60%;
+    height: 65%;
     width: 50%;
+    top: 25%;
     position: relative;
     margin-right: 20px;
     }
@@ -90,18 +97,19 @@ a {
 }
 
 #gora {
+ 
     z-index: 2;
    position: fixed;
     display: flex;
     font-family: UberMoveText, sans-serif;
     justify-content: space-between;
    left: 0%;
-   bottom: 90%;
+    top: 0%;
     width: 100%;
     height: 10%;
 }
 .gorabox{
-    
+   
     width: 96%;
     height: 70%;
     position: relative;
@@ -113,15 +121,16 @@ a {
 
 }
 
-.goraleft {
-   
+#goraleft {
+  
     position: relative;
-    top: 10%;
+    top: 20%;
     width: 11%;
     height: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    left: 1.5%;
 }
 
 #inputsearch {
@@ -130,7 +139,8 @@ a {
     appearance: none;
     outline: none;
     border: 0;
-    top:90%
+    top:0%;
+    font-size: 17px;
 
 }
 #inputsearch1 {
@@ -142,8 +152,7 @@ a {
     outline: none;
     padding: 0;
     border: 0;
-    top:90%
-
+    top:0%;
 }
 
 .mapimg {
@@ -163,7 +172,7 @@ a {
 
 #divsearch {
     
-    width: 71%;
+    width: 60%;
     height: 56px;
     font-family: UberMoveText, sans-serif;
     font-weight: normal;
@@ -175,13 +184,13 @@ a {
     background-color: white;
     color: #000000;
     box-sizing: border-box;
-    display: flex;
     position: relative;
+    left: 0%;
 
 }
 
 #divsearch1 {
-    transition: width 1s;
+   
     background-color:#EEEEEE ;
     visibility: hidden;
     width: 39%;
@@ -254,7 +263,7 @@ text-align: center;
 }
 
 .ul1{
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     right: 15%;
 }
@@ -285,7 +294,7 @@ width: 25%;
     height: 100%;
     width: 75%;
 }
-.guziki {
+#guziki {
     
     height: 80%;
     width: 16%;
@@ -352,12 +361,11 @@ width: 25%;
 
 
 .zamawianie {
-   
     width: 48%;
     height: 30%;
 position: relative;
 left: 2%;
-top: 40%;
+top: 35%;
 }
 
 
@@ -381,9 +389,9 @@ top: 40%;
     
 }
 #applinks{
-    
+   
     height: 20%;
-    width: 100%;
+    width: 70%;
     position: relative;
     left: 0%;
     top: 5%;
@@ -392,15 +400,13 @@ top: 40%;
     justify-content: space-between;
 }
 .applink {
-    height: 100%;
-    width: 30%;
+    height: 70%;
+    width: 70px;
     font-size: 14px;
     line-height: 20px;
     font-family: UberMoveText, sans-serif;
     font-weight: 500;
-    
     text-align: center;
-
     padding: 12px 16px;
     color: black;
     background-color:#EEEEEE;
@@ -408,9 +414,33 @@ top: 40%;
     font-weight: 500px;
     display: flex;
     flex-direction: row;
+    margin-left: 40%;
+    
+}
+
+#applink1 {
+    height: 70%;
+    width: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: UberMoveText, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 12px 16px;
+    color: black;
+    background-color:#EEEEEE;
+    border-radius: 500px;
+    font-weight: 500px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .applink:hover{
+    filter: brightness(70%);
+}
+
+#applink1:hover{
     filter: brightness(70%);
 }
 
@@ -477,20 +507,13 @@ li {
     display: block;
     }
 
-    .listh2 {
-        padding: 5px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        word-wrap: break-word;
-        
-    }
+   
     .listdol {
         padding: 5px;
         position: relative;
         display: flex;
         justify-content: space-between;
-        word-wrap: break-word;
+       
         
     }
     .listdol2 {
@@ -503,22 +526,29 @@ li {
         
     }
 .listgora {
+   
     position: relative;
     width: 80%;
-    height: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: UberMoveText, sans-serif;
+    font-size: 16px;
 }
 
 .listsrodek {
     position: relative;
     width: 80%;
-    height: 40%;
-}
-
- .listmiasta {
+    height: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   font-family:  UberMoveText, sans-serif;
+   font-size: 16px;
 }
+
+
 
 
 
@@ -534,8 +564,10 @@ li {
 
 
 .divhome{
-    background-color: tomato;
+    
     height: 3%;
+    position: relative;
+    top: 0%;
 }
 #home2{
     height: 100%;
@@ -558,13 +590,14 @@ li {
 .listzamawianie{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
+    
 }
 
 
 .mapadiv {
     position: relative;
-    background-color: yellow;
+
     height: 40%;
    
 }
@@ -602,7 +635,7 @@ li {
 
 
     .menupanel {
-        background-color: yellow;
+        
         width: 85%;
         left: 7%;
         height: 90%;
@@ -631,13 +664,13 @@ li {
     margin-bottom: 30px;
 }
 .appdiv {
-    background-color: yellowgreen;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 .appdivgora {
-    background-color: sandybrown;
+  
     position: relative;
     height: 50%;
     font-size: 40px;
@@ -654,17 +687,17 @@ li {
 }
 #applinks{
     position: relative;
-    background-color: salmon;
-    height: 15%;
-    width: 100%;
+    height: 30%;
+    width: 70%;
     top: 0%;
     bottom: 20%;
 }
-.applink{
-    text-justify:distribute;
-    width: 50%;
+#applink1{
+    position: relative;
+    width: 100%;
+    height: 50%;
     font-size: 37px;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-left: 10%;
     
 }
@@ -679,20 +712,30 @@ li {
     }
 
     .gorabox{
-        background-color: teal;
-        height: 60%;
-        top:30%;
-        width: 90%;
-        left: 3%;
+       
+        height: 77%;
+        top:10%;
+        width: 92%;
+        left: 4%;
     }
 
-    .goraleft {
-        background-color: tomato;
-        height: 100%;
-        width: 50%;
+    #goraleft {
+       
+        height: 70%;
+        width: 40%;
         top: 10%;
 
     }
+
+#divsearch1{
+    position: absolute;
+    
+    bottom: 0%;
+}
+#inputsearch1{
+    
+    font-size: 40px;
+}
 
     #menubutton {
         width: 50%;
@@ -706,11 +749,11 @@ li {
         width: 90%;
     }
 
-    .guziki {
-background-color: sienna;
-width: 50%;
+    #guziki {
+
+width: 45%;
 left: 55%;
-height: 80%;
+height: 60%;
 top: 0%;
 
     }
@@ -737,11 +780,11 @@ top: 0%;
    
 }
 .zamawianie{
-    background-color: aqua;
+    
     width: 90%;
-    height: 40%;
+    height: 50%;
     position: relative;
-    left: 5%;
+    left: 2.5%;
     top: 15%;
     display: flex;
     flex-direction: column;
@@ -758,7 +801,7 @@ top: 0%;
 
 .listzamawianie {
     position: relative;
-    background-color: sienna;
+    
     width: 100%;
     height: 40%;
     flex-direction: column;
@@ -768,9 +811,11 @@ top: 0%;
     position: relative;
    margin-bottom: 2%;
     width: 100%;
-    height: 50%;
+    height: 40%;
     top: 0%;
 }
+
+
 .mapimg {
 height: 50%;
 width: 10%;
@@ -779,13 +824,19 @@ right: 0%;
 }
 
 #inputsearch {
-    width: 100%;
+    
+    width: 80%;
     font-size: 40px;
+    top: 0%;
+    
 }
 #searchbutton {
-    background-color: red;
+    
+    position: relative;
     width: 100%;
     height: 30%;
+    top: 0%;
+    
 }
 #search {
     position: relative;
@@ -795,10 +846,12 @@ right: 0%;
 
 }
 .divtext2 {
-    background-color:olive ;
+    
     width: 90%;
     height: 10%;
     font-size: 40px;
+    position: relative;
+    bottom: 20%;
     
 }
 
@@ -834,39 +887,60 @@ width: 100%;
     top: 8%;
 }
 h2 {
+    position: relative;
     font-size: 60px;
 }
+.h2miasta{
+    position: relative;
+    top: 7%;
+}
+.h2kraje {
+    font-size: 60px;
+    position: relative;
+    top: 5%;
+}
 .mapadiv{
-    top:15%;
+    top:5%;
     left: 4%;
     height:40%;
     width: 92%;
 }
 .listgora{
     position: relative;
-    top: 15%;
-    background-color: steelblue;
+    top: 5%;
+   
     width: 100%;
     height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 40px;
+    height: 30%;
 }
-.list{
+.listsrodek{
     position: relative;
-    background-color: seagreen;
+  
     width: 100%;
-    top: 10%;
+    top: 5%;
     height: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+    height: 30%;
 
-.listmiasta {
-top:50%;
 font-size: 40px;
 }
+
+#wyswietlmiasta {
+    z-index: 1;
+ 
+    height: 3%;
+    width: 80%;
+    font-size: 45px;
+    position: absolute;
+   top: 178%;
+}
+
 .plist2{
     position: relative;
    
@@ -896,7 +970,7 @@ font-size: 40px;
 
 .appdiv2{
     position: relative;
-    background-color: teal;
+  
     height: 5%;
     bottom: 45%;
     width: 90%;
@@ -922,7 +996,7 @@ font-size: 40px;
 }
 #social {
     position: relative;
-    background-color: red;
+  
     width: 25%;
     height: 2.5%;
     left: 4%;
@@ -938,7 +1012,8 @@ font-size: 40px;
     top: 22%;
 }
 .przerwa3 {
-    height: 50%;
+    height: 30%;
+    bottom: 0%;
 }
 
 .ptop {
